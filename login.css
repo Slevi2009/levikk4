@@ -1,0 +1,101 @@
+.dvzllek {
+  position: absolute;
+  top: 17px;
+  left: 244px;
+  font-size: 100px;
+  font-weight: 800;
+  display: inline-block;
+  width: 573px;
+  height: 121px;
+}
+.login-child {
+  position: absolute;
+  top: 228px;
+  left: 95px;
+  border-radius: 30px;
+  background-color: var(--color-gray-200);
+  width: 872px;
+  height: 580px;
+}
+.felhasznlnv,
+.jelsz,
+.rd-ide-a,
+.rd-ide-a1 {
+  position: absolute;
+  top: 248px;
+  left: 114px;
+  font-weight: 800;
+  display: inline-block;
+  width: 401px;
+  height: 61px;
+}
+.jelsz,
+.rd-ide-a,
+.rd-ide-a1 {
+  top: 455px;
+  left: 116px;
+}
+.rd-ide-a,
+.rd-ide-a1 {
+  top: 331px;
+  left: 114px;
+  font-size: var(--font-size-11xl);
+  font-weight: 500;
+  width: 406px;
+  height: 34px;
+}
+.rd-ide-a1 {
+  top: 538px;
+  left: 116px;
+}
+.component-item {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-31xl);
+  background-color: #001aff;
+}
+.bejelentkezs1 {
+  position: absolute;
+  height: 74.74%;
+  width: 64.6%;
+  top: 12.63%;
+  left: 20.95%;
+  font-weight: 800;
+  display: inline-block;
+}
+.rectangle-container {
+  position: absolute;
+  top: 684px;
+  left: 185px;
+  width: 692px;
+  height: 95px;
+  font-size: 60px;
+}
+.frame-icon {
+  position: absolute;
+  top: 17px;
+  left: 985px;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.login {
+  position: relative;
+  border-radius: var(--br-xl);
+  background-color: var(--color-gray-100);
+  width: 1062px;
+  height: 835px;
+  overflow: hidden;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: left;
+  font-size: var(--font-size-31xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}

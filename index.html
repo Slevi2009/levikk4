@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;800&display=swap"
+    />
+  </head>
+  <body>
+    <div class="desktop">
+      <div class="rectangle-parent" id="groupContainer">
+        <div class="component-child"></div>
+        <div class="bejelentkezs"><a href="#">Bejelentkezés</a></div>
+      </div>
+      <img class="image-1-icon" alt="" src="./public/image-1@2x.png" />
+
+      <div class="levikk">Levikk</div>
+      <img class="image-2-icon" alt="" src="./public/image-2@2x.png" />
+
+      <div class="legfrissebb-hr-parent">
+        <div class="legfrissebb-hr">Legfrissebb hír</div>
+        <div class="rectangle-group">
+          <div class="group-child"></div>
+          <div class="image-3-parent">
+            <img class="image-3-icon" alt="" src="./public/image-3@2x.png" />
+
+            <div class="deathrun">DeathRun</div>
+            <div class="hamarosan-megjelenik">‎ ‎ ‎ ‎ ‎ ‎ ‎ Vissza lett vonva</div>
+          </div>
+          <div class="a-deathrun-jtkmd-container">
+            <p class="a-deathrun-jtkmd">
+              Sajnálattal jelentem be, hogy a DeathRun minijáték nem kerül megvalósításra. A játék programozása közben egy kritikus hiba lépett fel. Ezt sajnos ebben a verzióban nem lehet javítani.
+            </p>
+            <p class="vrhat-rkezs-2023">Köszönöm a megértést!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="loginContainer" class="popup-overlay" style="display: none">
+      <div class="login">
+        <div class="dvzllek">Üdvözöllek</div>
+        <div class="login-child"></div>
+        <div class="felhasznlnv">Felhasználónév</div>
+        <div class="jelsz">Jelszó</div>
+        <div class="rd-ide-a"><input type="text" id="name" name="name" placeholder="Írd ide a felhasználóneved!"></div>
+        <div class="rd-ide-a1"><input type="password" id="password" name="password" placeholder="Írd ide a jelszavad!"></div>
+        <div class="rectangle-container">
+          <div class="component-item"></div>
+          <div class="bejelentkezs1"><a href="#" id="login">Bejelentkezés</a></div>
+        </div>
+        <img
+          class="frame-icon"
+          alt=""
+          src="./public/frame.svg"
+          id="popupframeIcon"
+        />
+      </div>
+    </div>
+
+    <script>
+      var popupframeIcon = document.getElementById("popupframeIcon");
+      if (popupframeIcon) {
+        popupframeIcon.addEventListener("click", function (e) {
+          window.location.href = "C:/Users/Levi/Desktop/Asztal/Website/Levikk website/Levikk web/index.html";
+        });
+      }
+      
+      var groupContainer = document.getElementById("groupContainer");
+      if (groupContainer) {
+        groupContainer.addEventListener("click", function () {
+          var popup = document.getElementById("loginContainer");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+      
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+      document.getElementById("login").onclick = function() {
+        var username = document.getElementById("name").value;
+        var password = document.getElementById("password").value;
+        if (username === "TheLeviDR") {
+          if (password === "132") {
+            localStorage.setItem("logged", "1");
+            localStorage.setItem("username", document.getElementById("name").value);
+            window.location.href = "C:/Users/Levi/Desktop/Asztal/Website/Levikk website/Levikk dash/index.html";
+          }
+        }
+        if (username === "CKLevente") {
+          if (password === "2413") {
+            localStorage.setItem("logged", "1");
+            localStorage.setItem("username", document.getElementById("name").value);
+            window.location.href = "C:/Users/Levi/Desktop/Asztal/Website/Levikk website/Levikk dash/index.html";
+          }
+        }
+        if (username === "kechup") {
+          if (password === "5257") {
+            localStorage.setItem("logged", "1");
+            localStorage.setItem("username", document.getElementById("name").value);
+            window.location.href = "C:/Users/Levi/Desktop/Asztal/Website/Levikk website/Levikk dash/index.html";
+          }
+        }
+        if (username === "mustard") {
+          if (password === "6346") {
+            localStorage.setItem("logged", "1");
+            localStorage.setItem("username", document.getElementById("name").value);
+            window.location.href = "C:/Users/Levi/Desktop/Asztal/Website/Levikk website/Levikk dash/index.html";
+          }
+        }
+      }
+      </script>
+  </body>
+</html>
